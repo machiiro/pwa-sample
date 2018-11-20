@@ -54,6 +54,10 @@ export default {
           console.log('Push notifications are not enabled yet.')
         }
       })
+
+      OneSignal.on('notificationDisplay', (event) => {
+      	console.warn('OneSignal notification displayed:', event)
+      })
     })
   },
 
