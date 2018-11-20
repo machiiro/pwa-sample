@@ -39,6 +39,8 @@ export default {
 
   mounted() {
     this.location = JSON.stringify(location)
+
+    console.log(this.$OneSignal);
   },
 
   methods: {
