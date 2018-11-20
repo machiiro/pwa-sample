@@ -47,6 +47,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    publicPath: 'https://machiiro.github.io/pwa-sample',
+
     /*
     ** You can extend webpack config here
     */
