@@ -46,7 +46,8 @@ export default {
 
     this.$OneSignal.push(() => {
       console.log(this.$OneSignal)
-      this.$OneSignal.isPushNotificationsEnabled((isEnabled) => {
+      console.log(window.OneSignal)
+      OneSignal.isPushNotificationsEnabled((isEnabled) => {
         if (isEnabled) {
           console.log('Push notifications are enabled!')
         } else {
