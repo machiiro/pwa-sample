@@ -18,7 +18,7 @@
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
-      <div>
+      <div style="overflow: scroll;">
         <nuxt-link to="/">index</nuxt-link>
         <nuxt-link to="/detail">detail</nuxt-link>
         {{ location }}

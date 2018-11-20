@@ -5,7 +5,7 @@
       <h1 class="title">
         pwa-sample detail
       </h1>
-      <div>
+      <div style="overflow: scroll;">
         <nuxt-link to="/">index</nuxt-link>
         <nuxt-link to="/detail">detail</nuxt-link>
         {{ location }}
