@@ -8,6 +8,7 @@
   <h1>PWA Sample</h1>
 
   <script>
+    console.log('ready');
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js')
         .then(function() {
