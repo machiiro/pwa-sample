@@ -8,19 +8,15 @@
       <h2 class="subtitle">
         My great Nuxt.js project
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
       <div style="width: 300px; overflow: scroll;">
         <nuxt-link to="/">index</nuxt-link>
         <nuxt-link to="/detail">detail</nuxt-link>
+        <button
+          type="button"
+          @click="toIndex">index2</button>
+        <button
+          type="button"
+          @click="toDetail">detail2</button>
         {{ location }}
       </div>
     </div>
@@ -43,6 +39,15 @@ export default {
 
   mounted() {
     this.location = JSON.stringify(location)
+  },
+
+  methods: {
+    toIndex() {
+      this.$router.push('/')
+    },
+    toDetail() {
+      this.$router.push('/detail')
+    }
   }
 }
 </script>

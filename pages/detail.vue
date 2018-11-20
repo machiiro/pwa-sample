@@ -8,6 +8,12 @@
       <div style="width: 300px; overflow: scroll;">
         <nuxt-link to="/">index</nuxt-link>
         <nuxt-link to="/detail">detail</nuxt-link>
+        <button
+          type="button"
+          @click="toIndex">index2</button>
+        <button
+          type="button"
+          @click="toDetail">detail2</button>
         {{ location }}
       </div>
     </div>
@@ -30,6 +36,15 @@ export default {
 
   mounted() {
     this.location = JSON.stringify(location)
+  },
+
+  methods: {
+    toIndex() {
+      this.$router.push('/')
+    },
+    toDetail() {
+      this.$router.push('/detail')
+    }
   }
 }
 </script>
