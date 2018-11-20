@@ -43,15 +43,10 @@ export default {
     console.log(this.$OneSignal);
 
     this.$OneSignal.push(['sendTag', 'id', 100, function(tagsSent) {}])
-    this.$OneSignal.push(() => {
-        this.$OneSignal.isPushNotificationsEnabled((isEnabled) => {
-        if (isEnabled) {
-          console.log('Push notifications are enabled!')
-        } else {
-          console.log('Push notifications are not enabled yet.')
-        }
-      })
-    })
+
+    OneSignal.on('notificationDisplay', (event) => {
+    	console.warn('OneSignal notification displayed:', event)
+    });
   },
 
   methods: {
