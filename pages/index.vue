@@ -35,14 +35,14 @@ export default {
     Logo
   },
 
-  computed: {
-    location() {
-      if (process.server) {
-        return ''
-      } else {
-        return JSON.stringify(location)
-      }
+  data() {
+    return {
+      location: ''
     }
+  },
+
+  mounted() {
+    this.location = JSON.stringify(location)
   }
 }
 </script>

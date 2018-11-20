@@ -1,25 +1,25 @@
-importScripts('https://machiiro.github.io/pwa-sample/workbox.dev.4c4f5ca6.js')
+importScripts('/pwa-sample/_nuxt/workbox.dev.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "https://machiiro.github.io/pwa-sample382049a5cd5ed275d903.js",
-    "revision": "3d6e1679298a73dff17291631930814d"
+    "url": "/pwa-sample/_nuxt/53cb6a4d3c02e83c1d07.js",
+    "revision": "e8c493ce8a9f46842b836a5d1afd328f"
   },
   {
-    "url": "https://machiiro.github.io/pwa-sample5cd6afd26b44120afcfc.js",
-    "revision": "ed69c86d370997de96ada2c6b16b186a"
+    "url": "/pwa-sample/_nuxt/573558a3cd892cd3fa89.js",
+    "revision": "55acc62032cdf43982a57699e1dc7516"
   },
   {
-    "url": "https://machiiro.github.io/pwa-sampleca17add249afe25792da.js",
-    "revision": "8b170d238619c170f10a50b11fb2e7ee"
+    "url": "/pwa-sample/_nuxt/822b6dc8567f2a7640c0.js",
+    "revision": "14889fa20c9ac7f9340ab64c84e7bb16"
   },
   {
-    "url": "https://machiiro.github.io/pwa-sampled260cb7e1d34c01e4d1c.js",
-    "revision": "a600a80a655838fd381ffed110a4eb03"
+    "url": "/pwa-sample/_nuxt/bf5088407cc07779caf7.js",
+    "revision": "f51f39a18c4d1ae42e3fb843d7b1cdd4"
   },
   {
-    "url": "https://machiiro.github.io/pwa-sampledc64526bab8c6c65969c.js",
-    "revision": "40bf1f44f70e334e1bcb14c62f93c2fd"
+    "url": "/pwa-sample/_nuxt/f5a47b05928526f905a7.js",
+    "revision": "6160337c24ae80826cdfa93090ca3e03"
   }
 ], {
   "cacheId": "pwa-sample",
@@ -30,6 +30,6 @@ workbox.precaching.precacheAndRoute([
 workbox.clientsClaim()
 workbox.skipWaiting()
 
-workbox.routing.registerRoute(new RegExp('https://machiiro.github.io/pwa-sample/.*'), workbox.strategies.cacheFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/pwa-sample/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
 
-workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/pwa-sample/.*'), workbox.strategies.networkFirst({}), 'GET')

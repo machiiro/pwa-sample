@@ -1,5 +1,12 @@
 const pkg = require('./package')
 
+let routerConfig = {};
+if (process.env.npm_lifecycle_event === 'generate') {
+  routerConfig = {
+    base: '/pwa-sample/'
+  }
+}
+
 module.exports = {
   mode: 'universal',
 
@@ -39,6 +46,8 @@ module.exports = {
     '@nuxtjs/pwa'
   ],
 
+  router: routerConfig,
+
   generate: {
     dir: 'docs'
   },
@@ -47,8 +56,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    publicPath: 'https://machiiro.github.io/pwa-sample',
-
     /*
     ** You can extend webpack config here
     */
