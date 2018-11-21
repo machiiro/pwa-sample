@@ -73,7 +73,8 @@ module.exports = {
   },
 
   manifest: {
-    background_color: null
+    name: '',
+    background_color: ''
   },
 
   workbox: {
