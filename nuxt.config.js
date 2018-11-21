@@ -72,6 +72,10 @@ module.exports = {
     }
   },
 
+  manifest: {
+    background_color: null
+  },
+
   workbox: {
     dev: true
   },

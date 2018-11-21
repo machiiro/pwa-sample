@@ -2,8 +2,8 @@ importScripts('/pwa-sample/_nuxt/workbox.dev.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/pwa-sample/_nuxt/53cb6a4d3c02e83c1d07.js",
-    "revision": "e8c493ce8a9f46842b836a5d1afd328f"
+    "url": "/pwa-sample/_nuxt/483d37338a79bbdcffab.js",
+    "revision": "2abf3f68b85ce08288598f5ea08c99c7"
   },
   {
     "url": "/pwa-sample/_nuxt/71ab6ddf3fa3cde1da16.js",
